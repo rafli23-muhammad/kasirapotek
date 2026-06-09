@@ -16,7 +16,7 @@
             </p>
         </div>
 
-        <div class="mt-4 grid grid-cols-6 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
+        <div class="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
             <div
                 class="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default sm:px-7.5 xl:col-span-8">
                 <div class="mb-4 flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">

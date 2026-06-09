@@ -7,7 +7,7 @@
   x-data="{ page: 'ecommerce', loaded: true, darkMode: true, stickyMenu: false, sidebarToggle: false, scrollTop: false }"
   :class="{ 'dark text-bodydark ': darkMode === true }">
 
-  <div x-show="loaded" 
+  <div x-show="loaded" x-cloak
        x-init="window.addEventListener('DOMContentLoaded', () => { setTimeout(() => loaded = false, 500) })"
        class="fixed left-0 top-0 z-999999 flex h-screen w-screen items-center justify-center bg-white">
     <div class="h-16 w-16 animate-spin rounded-full border-4 border-solid border-primary border-t-transparent"></div>
