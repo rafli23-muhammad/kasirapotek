@@ -26,7 +26,8 @@
     </div>
   </div>
 
-  <script defer src="{{ asset('js/bundle.js') }}"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.14.9/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
   @stack('scripts')
 
   @if (session('toast_error'))
