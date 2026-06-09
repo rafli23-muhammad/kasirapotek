@@ -3,7 +3,8 @@
   "php": {
     "extensions": [
       "intl",
-      "gd"
+      "gd",
+      "zip"
     ]
   }
 }
