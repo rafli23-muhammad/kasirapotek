@@ -3,7 +3,7 @@
     @click.outside="sidebarToggle = false">
     <div class="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
         <a href="/">
-            <h1 class="text-green-400 font-outline-1 ml-4 font-extrabold text-4xl">Cashier</h1>
+            <h1 class="text-green-500 ml-4 font-extrabold text-4xl" style="-webkit-text-stroke: 0px; text-shadow: none;">Cashier</h1>
         </a>
 
         <button class="block lg:hidden text-black" @click.stop="sidebarToggle = !sidebarToggle">
