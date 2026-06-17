@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="p-8">
+    <div class="p-8 w-full">
         <div class="flex justify-between items-center">
             <h1 class="text-2xl font-bold text-gray-800">Dashboard</h1>
         </div>
@@ -18,7 +18,7 @@
 
         <div class="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
             <div
-                class="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default sm:px-7.5 xl:col-span-8">
+                class="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default sm:px-7.5">
                 <div class="mb-4 flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
                     <div class="flex w-full flex-wrap gap-3 sm:gap-5">
                         <div class="flex min-w-47.5">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="chart-container" style="position: relative; height:60vh; width: 100%;">
+                <div class="chart-container" style="position: relative; height:72vh; min-height: 560px; width: 100%;">
                     <canvas id="myChart"></canvas>
                 </div>
             </div>
@@ -132,13 +132,17 @@
                     data: @json($netProfit),
                     backgroundColor: 'rgba(239, 68, 68, 0.6)', // Bar color
                     borderColor: 'rgb(239, 68, 68)', // Border color
-                    borderWidth: 1
+                    borderWidth: 1,
+                    categoryPercentage: 0.75,
+                    barPercentage: 0.9
                 }, {
                     label: 'Pendapatan Kotor',
                     data: @json($incomeData),
                     backgroundColor: 'rgba(234, 179, 8, 0.6)', // Bar color
                     borderColor: 'rgb(234, 179, 8)', // Border color
-                    borderWidth: 1
+                    borderWidth: 1,
+                    categoryPercentage: 0.75,
+                    barPercentage: 0.9
                 }]
             },
             options: {
