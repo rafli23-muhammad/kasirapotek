@@ -2,4 +2,4 @@
 nixPkgs = ["php82", "php82Extensions.zip", "php82Extensions.pdo_mysql", "nodejs_20", "npm", "composer"]
 
 [phases.release]
-cmds = ["php artisan migrate --force --seed"]
+cmds = ["php artisan config:clear", "php artisan migrate --force --seed"]
